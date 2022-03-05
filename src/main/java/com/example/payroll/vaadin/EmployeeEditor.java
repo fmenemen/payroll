@@ -28,8 +28,6 @@ import com.vaadin.flow.spring.annotation.UIScope;
 @UIScope
 public class EmployeeEditor extends VerticalLayout implements KeyNotifier {
 
-	private static final long serialVersionUID = 1L;
-
 	private final EmployeeRepository repository;
 
 	// The currently edited employee

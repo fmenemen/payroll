@@ -5,4 +5,4 @@ Simple application that allows the creation and editing of employees with profil
 Tested with openjdk 16.0.1 and mysql 8.0.27. To "install" the application, navigate inside the "payroll" folder using a terminal and run "mvn clean install".
 
 ### RUN
-To run the application, navigate inside the "payroll" folder using a terminal and run "mvn spring-boot:run". The UI is then deployed on http://localhost:8080. A MySQL database and a database user satisfying the "spring.datasource.*" properties of the "application.properties" file have to be created before installing and running the application.
+To run the application, navigate inside the "payroll" folder using a terminal and run "mvn spring-boot:run". The UI is then deployed on http://localhost:8080. A MySQL database and a database user satisfying the "spring.datasource.*" properties of the "application.properties" file have to be created and started before installing and running the application.

@@ -8,6 +8,7 @@ import org.springframework.util.ObjectUtils;
 
 import com.example.payroll.model.Employee;
 import com.example.payroll.repository.EmployeeRepository;
+import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dialog.Dialog;
 import com.vaadin.flow.component.grid.Grid;
@@ -19,13 +20,15 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.provider.Query;
 import com.vaadin.flow.data.provider.QuerySortOrder;
 import com.vaadin.flow.data.value.ValueChangeMode;
+import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.spring.data.VaadinSpringDataHelpers;
 
-@Route
+@Tag("sa-main-view")
+@Route(value = MainView.ROUTE)
+@PageTitle("Main")
 public class MainView extends VerticalLayout {
-
-	private static final long serialVersionUID = 1L;
+	public static final String ROUTE = "";
 	private final EmployeeRepository repo;
 	private final EmployeeEditor editor;
 	final Grid<Employee> grid;
